@@ -1,0 +1,6 @@
+---
+- name: Install the latest stable Mercurial via Homebrew
+  package:
+    name: mercurial
+    state: latest
+  when: ansible_os_family == "Darwin"
